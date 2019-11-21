@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<title>CART</title>
+
+<!-- Bootstrap core CSS -->
+
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="css/modern-business.css" rel="stylesheet">
+
+<!-- My stylesheet -->
+
+<link href="restyle.css" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+<nav class="josefin navbar navbar-expand-md navbar-light fixed-top bg-white">
+  <div>
+    <div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    </div>
+    <div class="logopad col-lg-12"> 
+      <!-- To hold the GODREJ INTERIO logo -->
+      <div class="navbar-brand " href="index.html" ><img src="images/logo/godrej interio logo.PNG" width="233" height="58" alt=""/></div>
+    </div>
+  </div>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav col-12">
+      <li class="nav-item active"> <a class="nav-link" href="#">PRODUCTS <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">INTERIORS</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">DEALER LOCATOR</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">CONTACT US</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">ABOUT US</a> </li>
+      <li class="nav-item dropdown"> </li>
+    </ul>
+  </div>
+  <br>
+  
+  <!-- Search bar -->
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="What are you looking for?">
+    <div class="input-group-append"> <a href="search results.html">
+      <button class="btn " type="button"> <i class="fa fa-search"></i> </button>
+      </a> </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+
+<div class="container">
+
+<!-- Page Heading/Breadcrumbs -->
+<h1 class="mt-4 mb-3 baskerville">Cart </h1>
+<ol class="breadcrumb josefin">
+  <li class="breadcrumb-item"> <a href="index.html">Home</a> </li>
+  <li class="breadcrumb-item active">Search Results</li>
+  <li class="breadcrumb-item active">Cozy Sofa-cum-Bed</li>
+  <li class="breadcrumb-item active">Cart</li>
+</ol>
+
+<!--  Row -->
+<div class="josefin"> 
+  <!-- Intro Content -->
+  <div class="row">
+    <div class="col-lg-8"> <img class="img-fluid mb-4" src="images/chosen product/darwin-sofa-cum-bed-in-grey-colour-by-casacraft-darwin-sofa-cum-bed-in-grey-colour-by-casacraft-kyjb1g.jpg" alt=""> </div>
+    <div class="col-lg-4 margins">
+      <h2 class="baskerville"><em>Cozy Sofa-Cum-Bed</em></h2>
+      <p>A sofa-cum-bed, that brings the room to life. Make the most of your space with this luxurious addition..</p>
+      <div >
+        <div >
+          <div class="input-group number-spinner"> <span class="input-group-btn">
+            <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+            </span>
+            <input type="text" class="form-control text-center" value="1">
+            <span class="input-group-btn">
+            <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+            </span> </div>
+        </div>
+      </div>
+      <button  class="btnblue btn-lg" id="blue" onclick="document.getElementById('id01').style.display='block'">CHECKOUT</button>
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer"> <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> </div>
+          <div class="containerpopup">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Email Address" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label>
+              <input type="checkbox" checked="checked" name="remember">
+              Remember me </label>
+          </div>
+          <div class="containerpop" style="background-color:#f1f1f1">
+            <button class="btnblue btn-lg" id="blue" onclick="window.location.replace('payment.html')" class="buttonpop">
+            SIGN UP
+            </button>
+            <div id="id01" class="modal"> 
+              <!--<form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer"> <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> </div>
+    <div class="containerpopup">
+      <label for="uname"><b>Name</b></label>
+      <input type="text" placeholder="Full name" name="name" required>
+		<label for="city"><b>City</b></label>
+      <input type="text" placeholder="City" name="city" required>
+      <label for="psw"><b>Address</b></label>
+      <input type="text" placeholder="" name="text" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember">
+        Remember me </label>
+    </div>
+    <div class="containerpop" style="background-color:#f1f1f1">
+      
+        <a href="payment.html">
+        <button class="btnblue btn-lg" id="blue" onclick="document.getElementById('id01').style.display='none' ">SIGN UP</button>
+        </a>
+		
+		
+        <span class="psw"><a href="#">Forgot Password?</a></span>
+    </div>
+  </form>--> 
+            </div>
+            <span class="psw"><a href="#">Forgot Password?</a></span> </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.row --> 
+  
+  <!-- Popular Product -->
+  <h3 class="my-4 baskerville"><em>Our Popular Products</em></h3>
+  <div class="row">
+    <div class="col-md-3 col-sm-6 mb-4"> <a href="#"> <img class="img-fluid" src="images/products/black.jpg" alt=""> </a> </div>
+    <div class="col-md-3 col-sm-6 mb-4"> <a href="#"> <img class="img-fluid" src="images/products/blue.jpg" alt=""> </a> </div>
+    <div class="col-md-3 col-sm-6 mb-4"> <a href="#"> <img class="img-fluid" src="images/products/pink.jpg" alt=""> </a> </div>
+    <div class="col-md-3 col-sm-6 mb-4"> <a href="#"> <img class="img-fluid" src="images/products/grey2.jpg" alt=""> </a> </div>
+  </div>
+  <!-- /.row --> 
+  
+</div>
+<!-- /.container --> 
+
+<!-- Footer -->
+
+<div class="container">
+  <footer class="py-5 bg-light josefin">
+    <div class="row">
+      <div class="col-lg-3">LOG IN</div>
+      <div class="col-lg-3">HELP</div>
+      <div class="col-lg-3">CUSTOMER SERVICE</div>
+      <div class="col-lg-3"> LEGAL</div>
+    </div>
+    <div class="row text-black-50">
+      <div class="col-lg-3">SIGN UP</div>
+      <div class="col-lg-3">FAQs</div>
+      <div class="col-lg-3">ASK AN EXPERT</div>
+      <div class="col-lg-3">PRIVACY POICY</div>
+    </div>
+    <div class="row text-black-50">
+      <div class="col-lg-3">JOIN US</div>
+      <div class="col-lg-3">CHAT WITH US</div>
+      <div class="col-lg-3">DEALER LOCATOR</div>
+      <div class="col-lg-3"> MEDIA</div>
+    </div>
+    <div class="row text-black-50">
+      <div class="col-lg-3">CAREERS</div>
+      <div class="col-lg-3">GOT A QUERY?</div>
+      <div class="col-lg-3">AFTER SALES SERVICE</div>
+      <div class="col-lg-3"> PRESS </div>
+    </div>
+  </footer>
+  <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+</div>
+<!-- /.container --> 
+<!-- Footer --> 
+<!--<footer class="py-4 bg-light row josefin  align-self-sm-auto">
+  <div class="text-black- 50 footpad">
+    <div class="col-lg">LOG IN</div>
+    <div class="col-lg">SIGN UP</div>
+    <div class="col-lg">JOIN US</div>
+    <div class="col-lg">CAREERS</div>
+  </div>
+  <div class="text-black-50 footpad">
+    <div class="col-lg">HELP</div>
+    <div class="col-lg">FAQs</div>
+    <div class="col-lg">CHAT WITH US</div>
+    <div class="col-lg">GOT A QUERY?</div>
+  </div>
+  <div class="text-black-50 footpad">
+    <div class="col-lg">CUSTOMER SERVICE</div>
+    <div>&nbsp;ASK AN EXPERT</div>
+    <div class="col-lg">DEALER LOCATOR</div>
+    <div class="col-lg"> AFTER SALES SERVICE</div>
+  </div>
+  <div class="text-black-50 footpad ">
+    <div class="col-lg">LEGAL</div>
+    <div class="col-lg">PRIVACY POLICY</div>
+    <div class="col-lg">MEDIA</div>
+    <div class="col-lg"> PRESS </div>
+  </div></footer> </div>--> 
+<!-- /.container --> 
+
+<!-- Bootstrap core JavaScript --> 
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script type="text/javascript" src="jquery-3.4.1.js"></script>
+</body>
+</html>
